@@ -1,0 +1,9 @@
+<app-touch-indicator
+  *ngFor="let t of (dataService.data$ | async); let i = index"
+  [data]="(dataService.data$ | async)[i]"
+  [selected]="i === (dataService.selected$ | async)">
+</app-touch-indicator>
+<app-area-indicator
+  *ngIf="(dataService.data$ | async).length > 1"
+  [touches]="(dataService.data$ | async)">
+</app-area-indicator>

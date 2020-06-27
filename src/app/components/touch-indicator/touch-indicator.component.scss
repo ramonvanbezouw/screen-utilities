@@ -1,0 +1,26 @@
+:host {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  width:0px;
+  height:0px;
+  border:0.5px solid var(--color);
+  &::after{
+    display:block;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    border: 0.5px solid var(--color);
+    content:'';
+    transform:translate(-50%,-50%);
+  }
+  &.selected::after {
+    background:var(--color);
+  }
+  label {
+    position: absolute;
+    text-align:center;
+    white-space: nowrap;
+    margin-top:0.5rem;
+    transform:translateX(-50%);
+  }
+}

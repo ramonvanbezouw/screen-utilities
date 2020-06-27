@@ -1,0 +1,13 @@
+:host {
+  display:block;
+  display:grid;
+  place-content:center;
+  position:absolute;
+  background:rgba(255,255,255,0.5);
+  border:1px dashed var(--color);
+  transition: 100ms ease-in-out;
+  box-sizing: border-box;
+  label {
+    white-space: pre;
+  }
+}
